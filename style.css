@@ -17,6 +17,7 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
@@ -87,28 +88,38 @@ ul {
 
 .navbar__menu {
   display: flex;
+  padding-bottom: 4px;
 }
 
 .navbar__item {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .navbar__item__title {
+  font-size: 16px;
   color: white;
   font-weight: bold;
 }
 
 .navbar__btns {
   display: flex;
-  color: white;
-  font-weight: bold;
   align-items: center;
 }
 
 .navbar__btns > * {
+  color: white;
   margin-left: 24px;
 }
 
-.navbar__btns > i {
-  font-size: 18px;
+.navbar__btn__contact {
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 12px 16px;
+}
+
+.navbar__btns button i {
+  font-size: 16px;
+  font-weight: bold;
+
 }
