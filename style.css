@@ -1,0 +1,114 @@
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* header */
+
+/* announcebar */
+.announcebar {
+  display: flex;
+  background: linear-gradient(76.41deg,#2c56dd 47.95%,#1236ab 95.07%),#2c56dd;
+  color: white;
+  font-size: .688rem;
+  padding: 12px 0 8px;
+  justify-content: center;
+  align-items: center;
+
+}
+.announcebar__inner {
+  display: flex;
+  margin: auto;
+}
+.announcebar__content__img {
+  position: relative;
+  top: -2px;
+  margin: 0px 12px;
+}
+.announcebar__content {
+  display: flex;
+  text-align: center;
+}
+
+.announcebar__wallet {
+  display: flex;
+  text-align: center;
+}
+.wallet__title {
+  font-weight: bold;
+  margin: 0px 4px;
+}
+.announcebar__btn {
+  position: relative;
+  top: -2px;
+  right: 0;
+  color: white;
+  font-size: .688rem;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #202328;
+  align-items: center;
+}
+
+.navbar__logo {
+  
+}
+
+.navbar__logo svg {
+  width: 160px; 
+  fill:white;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__item {
+  margin-right: 30px;
+}
+
+.navbar__item__title {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar__btns {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+}
+
+.navbar__btns > * {
+  margin-left: 24px;
+}
+
+.navbar__btns > i {
+  font-size: 18px;
+}
