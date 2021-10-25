@@ -25,6 +25,11 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+p {
+  margin: 0;
+  padding: 0;
+}
 /* header */
 
 /* announcebar */
@@ -122,4 +127,51 @@ ul {
   font-size: 16px;
   font-weight: bold;
 
+}
+
+/* hero */
+.hero {
+  background-image: url(https://cdn.consensys.net/uploads/2020/04/15072437/consensys-reza-bg-edited-01-1920x1079.png);
+  height: 600px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.hero__content {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  left: -200px;
+  top: -50px;
+    margin: 40px;
+
+}
+
+.hero__content__title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.hero__content__sub {
+  margin: 40px 0px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.hero__content__explore {
+  background-color: #2c56dd;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 18px 36px;
+  border-radius: 4px;
 }
