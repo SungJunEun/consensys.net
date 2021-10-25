@@ -146,12 +146,13 @@ p {
 }
 
 .hero__content {
-  width: 800px;
+  min-width: 558px;
+  width: 40%;
   height: 400px;
   position: relative;
   left: -200px;
   top: -50px;
-    margin: 40px;
+  margin: 40px;
 
 }
 
