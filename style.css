@@ -130,7 +130,7 @@ p {
 }
 
 /* hero */
-.hero {
+#hero {
   background-image: url(https://cdn.consensys.net/uploads/2020/04/15072437/consensys-reza-bg-edited-01-1920x1079.png);
   height: 600px;
   background-size: cover;
@@ -175,4 +175,86 @@ p {
   font-size: 0.8rem;
   padding: 18px 36px;
   border-radius: 4px;
+}
+
+/* info */
+#info {
+  display: flex;
+  //background-color: pink;
+  margin: 3.5rem auto;
+  max-width: 1200px;
+}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  flex:1 70%;
+  //background-color: blue;
+}
+
+.org__title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.org__partner__box {
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+}
+
+org.partner {
+  width: 20%;
+}
+
+.partner {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.newsletter {
+  flex:1 30%;
+  //background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter__title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.newsletter__input {
+  margin: 12px 0;
+  height: 2.8rem;
+  width: 120%;
+  background-color: pink;
+  position: relative;
+
+}
+
+.newsletter__form__input {
+  background-color: hsla(0,0%,61.6%,.1);
+  border: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.newsletter__form__input::placeholder {
+  padding-left: 12px;
+  color: #848484;
+  font-size: 0.668rem;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.newsletter__form__btn {
+  font-size: 1.125rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
