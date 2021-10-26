@@ -138,7 +138,7 @@ p {
 #hero {
   background-image: url(https://cdn.consensys.net/uploads/2020/04/15072437/consensys-reza-bg-edited-01-1920x1079.png);
   height: 600px;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -152,20 +152,21 @@ p {
 }
 
 .hero__content {
-  width: 1200px;
+  max-width: 1200px;
   height: 400px;
-  padding-right: 400px;
-  margin: 40px auto;
-  max-width: 75rem;
+  //max-width: 75rem;
+  width: 80%;
 }
 
 .hero__content__title {
+  width: 65%;
   font-size: 4rem;
   font-weight: bold;
   line-height: 1;
 }
 
 .hero__content__sub {
+  width: 65%;
   margin: 40px 0px;
   font-size: 1.2rem;
   opacity: 0.8;
@@ -184,14 +185,16 @@ p {
 #info {
   display: flex;
   //background-color: pink;
-  margin: 3.5rem auto;
-  width: 1200px;
+  margin: 3.5rem 0;
+  width: 80%;
+  max-width: 1200px;
   justify-content: space-between;
 }
 
 .org {
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
   flex: 0 70%;
   //background-color: blue;
 }
@@ -280,8 +283,8 @@ p {
 /* industry */
 #industry {
   //background-color: pink;
-  margin: 0 auto;
-  width: 1240px;
+  width: 80%;
+  max-width: 1240px;
   height: 400px;
 }
 .indsutry__cards {
@@ -291,7 +294,7 @@ p {
   flex-wrap: wrap;
 }
 .indsutry__cards > a {
-  margin: 20px;
+  margin: 1%;
   width: 30%;
   //background-color: blue;
 }
