@@ -201,15 +201,16 @@ p {
   margin-top: 24px;
   display: flex;
   width: 100%;
+  background-color: pink;
 }
 
-org.partner {
+.org__partner {
   width: 20%;
 }
 
 .partner {
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -230,7 +231,7 @@ org.partner {
   margin: 12px 0;
   height: 2.8rem;
   width: 120%;
-  background-color: pink;
+  //background-color: pink;
   position: relative;
 
 }
@@ -252,9 +253,22 @@ org.partner {
 }
 
 .newsletter__form__btn {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  margin-right: 12px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+}
+
+.newsletter__caption {
+  font-size: 0.625rem;
+  color: #848484;
+}
+
+.newsletter__sns__box {
+  margin-top: 12px;
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
 }
