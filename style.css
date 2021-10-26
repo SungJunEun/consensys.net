@@ -276,3 +276,10 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
+/* industry */
+#industry {
+  margin: 3.5rem auto;
+  min-width: 1200px;
+  max-width: 75rem;
+}
