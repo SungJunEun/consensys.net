@@ -270,7 +270,8 @@ Co-Founder, Ethereum</p>
       <footer>
         <div class="footer__content">
           <div class="footer__menu">
-            <ul id= "Products"
+            <div class="footer__menu__1">
+              <ul id= "Products"
             class="footer__menu__list">
               <li class="footer__menu__title">Products</li>
               <li class="footer__menu__item">ConsenSys Product Suite</li>
@@ -305,7 +306,9 @@ Co-Founder, Ethereum</p>
               <li class="footer__menu__item">Real Estate</li>
               <li class="footer__menu__item">Syndicated Loans</li>
             </ul>
-            <ul id= "Industry Use Cases" class="footer__menu__list">
+            </div>
+            <div class="footer__menu__2">
+              <ul id= "Industry Use Cases" class="footer__menu__list">
               <li class="footer__menu__title">Industry Use Cases</li>
               <li class="footer__menu__item">All Use Cases</li>
               <li class="footer__menu__item">Capital Markets</li>
@@ -331,7 +334,9 @@ Co-Founder, Ethereum</p>
               <li class="footer__menu__item">Developer Portal</li>
               <li class="footer__menu__item">Blockchain Courses & Trainig</li>
             </ul>
-            <ul id= "Learn"
+            </div>
+            <div class="footer__menu__3">
+              <ul id= "Learn"
             class="footer__menu__list">
               <li class="footer__menu__title">Learn</li>
               <li class="footer__menu__item">Blockchain</li>
@@ -343,8 +348,9 @@ Co-Founder, Ethereum</p>
               <li class="footer__menu__item">Webinars</li>
               <li class="footer__menu__item">Insight Reports</li>
             </ul>
+            </div>
           </div>
-          <div class="newsletter">
+          <div id="footer__newsletter">
             <form class="newsletter__form" action="">
             <p class="newsletter__title">Subscribe to our newsletter.</p>
             <div class= "newsletter__input">
@@ -364,19 +370,22 @@ Co-Founder, Ethereum</p>
             <a href="" class="newsletter__sns"><i class="fab fa-medium-m"></i></a>
             <a href="" class="newsletter__sns"><i class="fas fa-rss-square"></i></a>
           </div>
+          <button class="newsletter__login">LOGIN</button>
             </form> 
-            <button class="newsletter__login">Login</button>
+            
           </div>
         </div>
         <div class="footer__bar">
-          <div class="footer__bar__logo">
+          <div class="footer__bar__content">
+            <div class="footer__bar__logo">
             <a href=""><img src="img/logo.svg" alt="" class="footer__bar__img"></a>
             <!-- filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(112%) contrast(101%); -->
             <p class="footer__bar__title">2021 © CONSENSYS</p>
           </div>
-          <div class="footer__bar__terms">
-            <a href=""><span class="footer__bar__privacy">PRIVACY POLICY </span></a>
-            <a href=""><span class="footer__bar__use">TERMS OF USE</span></a>
+          <ul class="footer__bar__terms">
+            <a href=""><li><span class="footer__bar__privacy">PRIVACY POLICY </span></li></a>
+            <a href=""><li class="footer__bar__list"><span class="footer__bar__use">TERMS OF USE</span></li></a>
+          </ul>
           </div>
         </div>
       </footer>
