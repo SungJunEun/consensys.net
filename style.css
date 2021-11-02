@@ -89,6 +89,11 @@ header {
 
 /* navbar */
 .navbar {
+  position: absolute;
+  z-index: 999;
+  top: 40px;
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 18px;
@@ -145,7 +150,7 @@ header {
 /* hero */
 #hero {
   background-image: url(https://cdn.consensys.net/uploads/2020/04/15072437/consensys-reza-bg-edited-01-1920x1079.png);
-  height: 600px;
+  height: 680px;
   width: 100%;
   background-size: cover;
   background-position: top center;
@@ -154,7 +159,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 130px;
 
 
 }
