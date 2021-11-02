@@ -51,17 +51,24 @@ header {
 
 }
 .announcebar__inner {
+    transition: all 250ms ease;
   display: flex;
   margin: auto;
 }
+
+.announcebar__inner:hover {
+  opacity: 0.4;
+}
+
+.announcebar__content {
+  display: flex;
+  text-align: center;
+}
+
 .announcebar__content__img {
   position: relative;
   top: -2px;
   margin: 0px 12px;
-}
-.announcebar__content {
-  display: flex;
-  text-align: center;
 }
 
 .announcebar__wallet {
