@@ -97,7 +97,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 18px;
-  background-color: #202328;
+  background-color: transparent;
   align-items: center;
 }
 
@@ -140,7 +140,14 @@ header {
   border: 1px solid white;
   border-radius: 4px;
   font-size: 11px;
-  padding: 12px 18px;
+  padding: 12px 22px;
+  transition: all 300ms ease;
+}
+
+.navbar__btn__contact:hover {
+  background-color: #2c56dd;
+  color: white;
+  border: 1px solid transparent;
 }
 
 .navbar__btns button i {
