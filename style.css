@@ -120,20 +120,19 @@ header {
 
 .navbar__btns > * {
   color: white;
-  margin-left: 24px;
+  margin-left: 18px;
 }
 
 .navbar__btn__contact {
+  font-weight: bold;
   border: 1px solid white;
   border-radius: 4px;
-  font-size: 12px;
-  padding: 12px 16px;
+  font-size: 11px;
+  padding: 12px 18px;
 }
 
 .navbar__btns button i {
-  font-size: 16px;
-  font-weight: bold;
-
+  font-size: 20px;
 }
 
 /* hero */
@@ -716,4 +715,70 @@ background-color: #fff;
     height: .188rem;
     margin: 0 .25rem;
     width: .188rem;
+}
+
+/* cookies */
+.cookies {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  background-color: black;
+  opacity: 0.9;
+  justify-content: space-between;
+
+}
+
+.cookies__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 4;
+  font-size: 0.75rem;
+  color: #9d9d9d;
+}
+
+.cookies__content > a {
+  color: white;
+}
+.cookies__btn {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.cookies__btn__accept, .cookies__btn__decline {
+  font-size: 1.05rem;
+  padding: 0.95rem 0.5rem;
+  color: white;
+}
+
+.cookies__btn__accept {
+  font-weight: bold;
+}
+
+/* mixer */
+.mixer__btn {
+  background-color: #2c6fdd;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+}
+
+.mixer__btn:hover {
+  transform: scale(1.1);
+}
+
+.mixer__btn > svg {
+  width: 80%;
+  height: 80%;
+  filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(112%) contrast(101%);
 }
