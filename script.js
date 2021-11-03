@@ -4,6 +4,7 @@ const announcebarBtn = document.querySelector('.announcebar__btn');
 const navbar = document.querySelector('.navbar');
 const navbarBtns = document.querySelector('.navbar__btns');
 const searchPage = document.querySelector('.search__page');
+const serachPageBtn = document.querySelector('.search__page__btn');
 // remove announcebar if its clicked
 announcebarBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -39,3 +40,7 @@ navbarBtns.addEventListener('click', function(e) {
   }
 
 });
+
+serachPageBtn.addEventListener('click', function() {
+  searchPage.style.display = "none";
+})

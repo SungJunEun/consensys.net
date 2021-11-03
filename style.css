@@ -1,3 +1,16 @@
+/* Clear button remove */
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
 /* Universal tags */
 * {
   box-sizing: border-box;
@@ -160,7 +173,7 @@ header {
 /* search page */
 .search__page {
   position: fixed;
-  display: inline-block;
+  display: none;
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -189,7 +202,7 @@ header {
 }
 
 .search__page__main form {
-  transform: translateY(-100px);
+  transform: translateY(-90px);
 }
 
 .search__form__main {
@@ -209,10 +222,13 @@ header {
   width: 1125px;
   height: 105px;
   font-weight: bold;
-  letter-spacing: -1px;
-  padding: 1.5rem;
+  letter-spacing: -3px;
+  padding: 1.75rem 1.5rem 1.5rem 1.5rem;
   background: transparent;
   border: none;
+  outline: none;
+  caret-color: white;
+  color: white;
 }
 
 .form__main__btn i {
