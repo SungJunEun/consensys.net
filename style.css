@@ -38,6 +38,9 @@ p {
 /* header */
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 998;
 }
 /* announcebar */
 .announcebar {
@@ -106,7 +109,7 @@ header {
 }
 
 .navbar__logo svg {
-  width: 160px; 
+  width: 140px; 
   fill:white;
 }
 
@@ -152,6 +155,70 @@ header {
 
 .navbar__btns button i {
   font-size: 20px;
+}
+
+/* search page */
+.search__page {
+  position: fixed;
+  display: inline-block;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.99;
+  z-index: 998;
+  background: linear-gradient(64.72deg,#121212 .9%,#202328),#121212;
+}
+
+.search__page__navbar {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search__page__btn {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.search__page__main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__page__main form {
+  transform: translateY(-100px);
+}
+
+.search__form__main {
+  background-color: hsla(0,0%,100%,.08);
+  display: flex;
+}
+
+.search__form__detail {
+  color: #b8b8b8;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.form__main__input {
+  font-size: 2.75rem;
+  width: 1125px;
+  height: 105px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: 1.5rem;
+  background: transparent;
+  border: none;
+}
+
+.form__main__btn i {
+  font-size: 2rem;
+  color: white;
+  padding-right: 1.5rem;
 }
 
 /* hero */
@@ -790,6 +857,7 @@ background-color: #fff;
   align-items: center;
   justify-content: center;
   transition: all 200ms ease;
+  z-index: 999;
 }
 
 .mixer__btn:hover {
