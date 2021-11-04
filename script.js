@@ -46,13 +46,16 @@ navbarBtns.addEventListener('click', function(e) {
   }
 });
 
+//close search page
 serachPageBtn.addEventListener('click', function() {
   searchPage.style.display = "none";
 });
 
+//close login page
 overlay.addEventListener('click', function() {
   if(visibility) {
     loginPage.classList.remove('visible');
     overlay.classList.remove('visible');
+    visibility = false;
   }
 });
