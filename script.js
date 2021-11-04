@@ -5,6 +5,10 @@ const navbar = document.querySelector('.navbar');
 const navbarBtns = document.querySelector('.navbar__btns');
 const searchPage = document.querySelector('.search__page');
 const serachPageBtn = document.querySelector('.search__page__btn');
+const loginPage = document.querySelector('.login__page');
+const overlay = document.querySelector('.overlay');
+
+let visibility = false;
 // remove announcebar if its clicked
 announcebarBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -27,7 +31,6 @@ navbarBtns.addEventListener('click', function(e) {
   if(e.target.tagName == 'I') {
     id = e.target.parentNode.id;
   }
-  console.log(id);
   if(!id) {
     return;
   }
@@ -36,11 +39,20 @@ navbarBtns.addEventListener('click', function(e) {
     body.style.overflow = "hidden";
   }
   else if(id == "login") {
-
+    loginPage.classList.add('visible');
+    body.style.overflow = "hidden";
+    overlay.classList.add('visible');
+    visibility = true;
   }
-
 });
 
 serachPageBtn.addEventListener('click', function() {
   searchPage.style.display = "none";
-})
+});
+
+overlay.addEventListener('click', function() {
+  if(visibility) {
+    loginPage.classList.remove('visible');
+    overlay.classList.remove('visible');
+  }
+});
