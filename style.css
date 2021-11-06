@@ -618,7 +618,7 @@ header {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .app__cards > a {
-  margin: 1.25rem;
+  margin: 1%;
     width: 30%;
 }
 
@@ -690,7 +690,7 @@ header {
   margin-left: 1.25rem;
 }
 .report__card__img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -935,20 +935,19 @@ background-color: #fff;
   background-color: black;
   opacity: 0.9;
   justify-content: space-between;
-
+  align-items: center;
 }
 
 .cookies__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex: 4;
   font-size: 0.75rem;
   color: #9d9d9d;
+  text-align: center;
 }
 
 .cookies__content > a {
   color: white;
+  display: inline;
 }
 .cookies__btn {
   display: flex;
